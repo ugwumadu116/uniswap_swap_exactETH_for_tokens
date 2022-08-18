@@ -16,13 +16,11 @@ contract simpleDepositContract {
         return balances[_user];
     }
 
-    //  special receive function that receives eth and calls deposit()
     receive() external payable {
         Deposit();
         emit depositEvent(msg.sender, msg.value);
     }
     
-    // allows a user to withdral
     function withdraw() public {
         require(balances[msg.sender] > 0, "No deposit");
         balances[msg.sender] = 0;

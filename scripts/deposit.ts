@@ -3,9 +3,6 @@ import { ethers } from "hardhat";
 // deployed to 0x8F139994A2DDF272Ff05C84BF15945cbD4e70970
 
 async function main() {
-//   const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-//   const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-//   const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
 
   const amount = ethers.utils.parseEther("1");
 
